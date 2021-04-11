@@ -1,5 +1,108 @@
+*{
+    box-sizing:border-box;
+}
+#boddy{
+    background-color: rgb(0,14,48);
+}
+/*--------------------Estilos para el carousel--------------------*/
+.height-carousel img{
+    height: 400px;
+    object-fit: cover;
+}
+.carousel-item{
+    position:relative;
+}
+.card-text{
+    background-color: rgba(255,255,255,.7);
+    width: 300px;
+    position:absolute;
+    top:0px;
+    right: 12%;
+    height: 100%;
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+    color: rgb(0,14,48);
+    transform: translate(300px,0px);
+    opacity: 0;
+    padding: 50px;
+}
+
+.active .animate{
+    opacity: 1;
+    transform: translate(0px,0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-icon{
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+/*-----------------Estilos de la tabla-----------------*/
+.items-carta{
+    display:block;
+}
+table {
+    border-radius: 8px;
+    padding: 15px;
+    width: 49%;
+    background-color: rgb(249,250,223);
+    box-shadow:  6px 7px 7px rgba(255, 255, 255, 0.4);
+    margin:0 auto !important;
+}
+th{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style:oblique;
+    padding: 25px;
+    margin: auto;
+    color:  rgb(128,31,153);
+}
+
+td {
+    color: rgb(0,14,48);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:25px;
+    font-style:oblique;
+    padding: 15px;
+    text-align: center;
+    cursor:default;
+}
+tbody{
+    text-align: center;
+}
+
+/*--------------------------Estilos para los items e imagenes del menu ------------------- */
+
+.item-carta{
+    position:relative;
+}
+.item-carta:hover{
+    color: rgb(128,31,153);
+}
+
+.item-carta:hover > .img-food{
+    opacity:1;
+    transition: all 0.5s ease-in-out;
+}
+.item-carta img{
+    height: 100px;
+    border-radius:15px;
+}
+
+.img-food{
+    width: 200px;
+    position:absolute;
+    top:0;
+    right:-160px;
+    height: 90px;
+    opacity:0;
+}
+/*************** footer **************/
 #footer {
-    background: rgb(0,14,48);
+    /* background: rgb(0,14,48); */
     color: lightgrey;
 }
 #redes a {

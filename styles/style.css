@@ -1,0 +1,11 @@
+#footer {
+    background: rgb(0,14,48);
+    color: lightgrey;
+}
+#redes a {
+    color: lightgrey;
+    font-size: 25px;
+}
+#footer a:hover {
+    color: white;
+}
